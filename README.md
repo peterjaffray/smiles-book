@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Tired of patients not showing up for dental appointments? 
 
-## Getting Started
+Other patient reminder solutions got you down? 
 
-First, run the development server:
+Stop being annoying and start booking patients in a more convenient way letting them choose their own preferences along the way. 
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Stop asking patients for the same information over and over again. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#Features: 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Patients can provide as much information up front as possible depending on their unique situation. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Reminders are smarter and will include direct links to specific form elements on a timeline that makes sense. 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Information is only collected once and hashed. It's both more secure and more convenient. 
 
-## Learn More
+- Patients can upload pictures and benefit from OCR technologies to pre-load information (insurance cards, drivers license). Information can alternatively be manually entered by patient or staff (i.e on the phone).
 
-To learn more about Next.js, take a look at the following resources:
+- Patients in waiting room can complete remainder of application on their own device at a personal URL. Show them a QR Code, SMS them a link, or include it in an email message.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Cross device cookies are secure using two points of information to the patient would know to retrieve incomplete patient forms. Passwordless 2FA options can be enabled to comply with regulatory laws. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+*Benefits: 
 
-## Deploy on Vercel
+- Staff can have more meaningful conversations with patients to fill in Notes - rather than ask them a bunch of questions patients already answered. 
+- Save about 80% of the time currently spent on updating records and re-invest that into meaningful patient relationships. 
+- Pre-approve procedures and insurance information prior to the appointment and give patients clear expectations on any costs they may face and the procedural options covered by their plan. 
+- Remember your patients better with automated administrative tools to help re-schedule, reminds, and stay connected with patients so you can more effecitvely monitor their health on a schedule without falling behind. 
+- Eliminate waiting 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
