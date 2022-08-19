@@ -11,14 +11,7 @@ const PatientForm = React.forwardRef(function Button(
   return (
          
             <div>
-              <TextField
-                hintText="Password"
-                floatingLabelText="Password"
-                type="password"
-                errorText={this.state.password_error_text}
-                onChange={e => this.changeValue(e, 'password')}
-                onBlur={this.isDisabled} 
-              />
+        
                 <label htmlFor="price" className="block text-sm font-medium text-gray-700">
                   Price
                 </label>

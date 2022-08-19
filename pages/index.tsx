@@ -10,6 +10,8 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Button from '../components/Button';
+import PatientForm from '../components/PatientForm';
 
 const products = [
   {
@@ -52,6 +54,8 @@ const Home: NextPage = () => {
       </Head>
 
       <React.Fragment>
+        <Button className="hidden sm:block lg:hidden xl:block" aria-label="Previous"> Button </Button>
+        <PatientForm />
         <Typography variant="h6" gutterBottom>
           Order summary
         </Typography>
@@ -69,32 +73,34 @@ const Home: NextPage = () => {
             </Typography>
           </ListItem>
         </List>
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={6}>
-            <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
-              Shipping
-            </Typography>
-            <Typography gutterBottom>John Smith</Typography>
-            <Typography gutterBottom>{addresses.join(", ")}</Typography>
-          </Grid>
-          <Grid item container direction="column" xs={12} sm={6}>
-            <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
-              Payment details
-            </Typography>
-            <Grid container>
-              {payments.map((payment) => (
-                <React.Fragment key={payment.name}>
-                  <Grid item xs={6}>
-                    <Typography gutterBottom>{payment.name}</Typography>
-                  </Grid>
-                  <Grid item xs={6}>
-                    <Typography gutterBottom>{payment.detail}</Typography>
-                  </Grid>
-                </React.Fragment>
-              ))}
+        <div className='grid bg-blue'>
+          <Grid container spacing={2}>
+            <Grid item xs={12} sm={6}>
+              <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
+                Shipping
+              </Typography>
+              <Typography gutterBottom>John Smith</Typography>
+              <Typography gutterBottom>{addresses.join(", ")}</Typography>
+            </Grid>
+            <Grid item container direction="column" xs={12} sm={6}>
+              <Typography variant="h6" gutterBottom sx={{ mt: 2 }}>
+                Payment details
+              </Typography>
+              <Grid container>
+                {payments.map((payment) => (
+                  <React.Fragment key={payment.name}>
+                    <Grid item xs={6}>
+                      <Typography gutterBottom>{payment.name}</Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Typography gutterBottom>{payment.detail}</Typography>
+                    </Grid>
+                  </React.Fragment>
+                ))}
+              </Grid>
             </Grid>
           </Grid>
-        </Grid>
+        </div>
       </React.Fragment>
     </Container>
   );
